@@ -1,7 +1,7 @@
 # Restaurant-App-Using-Custom-API
 Front End Application using custom built web API. The API I created is connected to MongoDB and fetches restaurant data. The front end uses JQuery, Lodash, Leaflet, and Bootstrap to present the information and Pagination to navigate between data.
 
-The Application is hosted at: https://dreamy-borg-5c3ea8.netlify.app/#
+The Application is hosted at: https://gallant-nobel-86b853.netlify.app
 
 MORE INFORMATION/SPECS:
 
