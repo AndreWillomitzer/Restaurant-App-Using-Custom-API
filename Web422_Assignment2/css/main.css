@@ -1,0 +1,29 @@
+#restaurant-table tr:hover{ cursor:pointer; }
+#leaflet { height: 400px; }
+.body{
+    background-color: #FFFAFF;
+}
+.navbar{
+    background-color: #FFFAFF;
+}
+.navbar-default .navbar-brand{
+    background-color: #FFFAFF;
+    color: #050505;
+}
+.navbar-brand{
+    background-color: #FFFAFF;
+    color: #050505;
+}
+#restaurantNav{
+    background-color: #FFFAFF;
+    color: #050505;
+}
+td, th, .navbar-brand, #restaurantNav {
+    font-family: Verdana, sans-serif;
+}
+th{
+    color:  #0077B6;
+}
+#restaurant-table tr{
+    background-color: #FFFAFF;
+}
