@@ -9,7 +9,7 @@ let avg = function(grades){
     console.log(total);
     grades.forEach(function(grade){
         total += grade.score;
-        //console.log("current score: " ,grade.score);
+        
     });
     
     let avg = (total/grades.length);
@@ -17,37 +17,6 @@ let avg = function(grades){
     return avg.toFixed(2);
 }
 
-/* let avg = function(grades){
-    let total;
-    let counter;
-    for(let i = 0; i < grades.length; i++){
-        counter++;
-        total += grades.score;
-    }
-    let average = (total/grades.length);
-    return average.toFixed(2);
-} */
-
-/* const tableRows = _.template(restaurantData.forEach(restaurant=>{
-    let tableRow = document.createElement("tr");
-    tableRow.setAttribute("data-id", restaurant._id);
-    
-    let nameTD = document.createElement("td");
-    nameTD.innerHTML = restaurant.name;
-    tableRow.appendChild(nameTD);
-    
-    let cuisineTD = document.createElement("td");
-    cuisineTD.innerHTML = restaurant.cuisine;
-    tableRow.appendChild(cuisineTD);
-
-    let addStreetTD = document.createElement("td");
-    addStreetTD.innerHTML = `Building: ${restaurant.address.building}, Street: ${restaurant.address.street}`;
-    tableRow.appendChild(addStreetTD);
-
-    let gradesTD = document.createElement("td");
-    gradesTD.innerHTML = "Average Grade: " + avg(restaurant.grades);
-    tableRow.appendChild(gradesTD);
-})); */
 const tableRows = 
 
 _.template(
@@ -80,7 +49,7 @@ let loadRestaurantData = function(){
 //tr element onclick
 $(function(){
     loadRestaurantData();
-    $(".table").on("click", "tr", function(){ //my selector is messed up for sure
+    $(".table").on("click", "tr", function(){ 
         let currentID = $(this).attr("data-id");
         //console.log("current ID value: ", currentID);
 /*         restaurantData.forEach(restaurant=>{
@@ -136,4 +105,3 @@ $(function(){
     });
 
 })
-//window.onload = loadRestaurantData();
